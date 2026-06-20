@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация компании</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="register-company">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/login.html">Вход</a>
+          <a href="/register-student.html">Регистрация студента</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <form id="company-register-form" class="form-card">
+        <h1>Регистрация компании</h1>
+        <div id="page-message" class="message"></div>
+        <label for="fullName">Контактное лицо</label>
+        <input id="fullName" type="text" />
+        <label for="email">Электронная почта</label>
+        <input id="email" type="email" />
+        <label for="password">Пароль</label>
+        <input id="password" type="password" />
+        <label for="companyName">Название компании</label>
+        <input id="companyName" type="text" />
+        <label for="companyDescription">Описание</label>
+        <textarea id="companyDescription"></textarea>
+        <label for="website">Сайт</label>
+        <input id="website" type="text" />
+        <button type="submit">Создать аккаунт компании</button>
+      </form>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

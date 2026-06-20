@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отклик на вакансию</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="apply">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/resume.html">Резюме</a>
+          <a href="/applications.html">Мои отклики</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <div id="page-message" class="message"></div>
+      <div id="vacancy-short"></div>
+      <div id="resume-state" style="margin: 16px 0;"></div>
+      <form id="apply-form" class="form-card">
+        <h1>Форма отклика</h1>
+        <label for="coverLetter">Сопроводительное письмо</label>
+        <textarea id="coverLetter"></textarea>
+        <button type="submit">Отправить отклик</button>
+      </form>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

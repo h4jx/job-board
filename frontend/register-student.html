@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация студента</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="register-student">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/login.html">Вход</a>
+          <a href="/register-company.html">Регистрация компании</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <form id="student-register-form" class="form-card">
+        <h1>Регистрация студента</h1>
+        <div id="page-message" class="message"></div>
+        <label for="fullName">ФИО</label>
+        <input id="fullName" type="text" />
+        <label for="email">Электронная почта</label>
+        <input id="email" type="email" />
+        <label for="password">Пароль</label>
+        <input id="password" type="password" />
+        <button type="submit">Создать аккаунт студента</button>
+      </form>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

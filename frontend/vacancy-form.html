@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новая вакансия</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="vacancy-form">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/company.html">Кабинет компании</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <form id="vacancy-form" class="form-card">
+        <h1>Создание вакансии</h1>
+        <div id="page-message" class="message"></div>
+        <label for="title">Название</label>
+        <input id="title" type="text" />
+        <label for="description">Описание</label>
+        <textarea id="description"></textarea>
+        <label for="location">Локация</label>
+        <input id="location" type="text" />
+        <label for="employment">Тип занятости</label>
+        <input id="employment" type="text" placeholder="Стажировка / Частичная занятость" />
+        <label for="salaryFrom">Зарплата от</label>
+        <input id="salaryFrom" type="number" />
+        <label for="salaryTo">Зарплата до</label>
+        <input id="salaryTo" type="number" />
+        <label for="skills">Навыки</label>
+        <input id="skills" type="text" placeholder="HTML, CSS, jQuery" />
+        <button type="submit">Отправить на модерацию</button>
+      </form>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

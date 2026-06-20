@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Board</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="home">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/resume.html">Студент</a>
+          <a href="/company.html">Компания</a>
+          <a href="/admin.html">Админ</a>
+          <a href="/login.html">Вход</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-box">
+          <h1>Вакансии для студентов с простым фильтром по навыкам</h1>
+          <p class="muted">Компании публикуют вакансии, студенты отправляют отклики, а админ модерирует объявления.</p>
+          <div class="row">
+            <select id="skill-filter">
+              <option value="">Все навыки</option>
+            </select>
+            <a class="button-link button-inline" href="/login.html">Открыть кабинет</a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div id="page-message" class="message"></div>
+        <div id="vacancy-list" class="grid"></div>
+      </section>
+      <section class="footer-note container muted small">
+        Демо-аккаунты студента, компании и администратора доступны на странице входа.
+      </section>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Модерация администратора</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page" data-page="admin">
+    <header class="topbar">
+      <div class="container topbar-row">
+        <a class="brand" href="/">Job Board</a>
+        <nav class="nav">
+          <a href="/">Вакансии</a>
+          <a href="/admin.html">Модерация</a>
+          <span id="user-label"></span>
+          <button id="logout-button" style="display: none;">Выйти</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container section">
+      <h1>Модерация вакансий</h1>
+      <div id="page-message" class="message"></div>
+      <div id="moderation-list" class="stack"></div>
+    </main>
+    <script src="/vendor/jquery.min.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
